@@ -1,0 +1,176 @@
+.Page-Login {
+    background-color: #e3e1e1;    
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(20, 7, 41);
+    border-radius: 25px;
+}
+.Section {
+    height: 460px;
+    width: 460px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto; 
+    overflow: hidden;
+    border-radius: 25px;
+}
+body {
+    background: linear-gradient(-45deg, #1b191a, #7d4a0f, #723018, #2d1f27);
+	background-size: 800% 800%;
+    animation: gradient 20s ease infinite;
+}
+.User-login {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'EB Garamond', serif;
+    color: white;
+}
+
+.Login-atributes {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Forgot {
+    margin: 15px auto;
+    padding: 5px;
+    color: gray;
+    font-size: 14px;
+}
+.Forgot:hover {
+    cursor: pointer;
+    border-radius: 5%;
+    transition: 1s;
+    background-color: lightgray;
+    color: black;
+    padding: 5px;
+    
+}
+.Login-button {
+    background-color: cornflowerblue;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    font-family: 'EB Garamond', serif;
+    margin: 10px auto;
+}
+.Login-button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: lightblue;
+    padding: 7px 45px;
+}
+.Login-button:active {
+    background-color: gray;
+    transition: none;
+    color: black;
+}
+.up-log {
+    margin-top: 5px;
+    color: gray;
+    font-family: 'EB Garamond', serif;
+    margin-left: -90px;
+    
+}
+.Login {
+    border: none;
+    background: none;
+    border-bottom: 2px solid lightgray;
+    padding: 10px 20px;
+}
+.Login:hover {
+    transition: 1s;
+    padding: 13px 28px;
+}
+.Login:active {
+    border: none;
+    background-color: none;
+
+}
+.rotate-center {
+    top: -250px;
+	width: 500px;
+    height: 480px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 200px;
+    text-align: center;
+    z-index: -1;
+	background-size: 400% 400%;
+
+    
+    animation: rotate-center 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both, 
+    color_change 15s alternate infinite;
+}
+#color-change {
+    animation: color_change 1s alternate infinite;
+}
+
+/*
+ @keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+*/
+@keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+      transform-origin: bottom left;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: bottom left;
+    }
+  }
+  
+  
+  
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes color_change {
+    0% {
+        background-color: lightpink;
+    }
+    25%
+    {
+        background-color: lightblue;
+    }
+    50%
+    {
+        background-color: yellow;
+    }
+    75% 
+    {
+        background-color: lime;
+    }
+    100%
+    {
+        background-color: lightpink;
+    }
+    
+}
