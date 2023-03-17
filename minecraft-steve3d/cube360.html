@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cube">
+        
+        <div style="transform-style: preserve-3d;"><!--  head -->
+            <div class="top"></div>
+            <span style="--i:0; width: 64px; height: 64px;"></span>
+            <span style="--i:1; width: 64px; height: 64px;"></span>
+            <span style="--i:2; width: 64px; height: 64px;"></span>
+            <span style="--i:3; width: 64px; height: 64px;"></span>
+        </div>
+        <div><!-- tułów -->
+            <div class="body-top"></div>
+            <div class="body1" style="--i:0"></div>
+            <div class="body2" style="--i:1;"></div>
+            <div class="body1" style="--i:2;"></div>
+            <div class="body2" style="--i:3;"></div>
+        </div>
+        <div><!-- lewa reka-->
+            <div class="left-arm-top"></div>
+            <div style="--i:0; width: 32px; height: 96px;"></div>
+            <div style="--i:1; width: 32px; height: 96px;"></div>
+            <div style="--i:2; width: 32px; height: 96px;"></div>
+            <div style="--i:3; width: 32px; height: 96px;"></div>
+        </div>
+        <div><!-- prawa reka-->
+            <div class="right-arm-top"></div>
+            <div style="--i:0; width: 32px; height: 96px;"></div>
+            <div style="--i:1; width: 32px; height: 96px;"></div>
+            <div style="--i:2; width: 32px; height: 96px;"></div>
+            <div style="--i:3; width: 32px; height: 96px;"></div>
+        </div>
+        <div><!--lewa noga-->
+            <div class="left-leg-top"></div>
+            <div style="--i:0; width: 32px; height: 96px;"></div>
+            <div style="--i:1; width: 32px; height: 96px;"></div>
+            <div style="--i:2; width: 32px; height: 96px;"></div>
+            <div style="--i:3; width: 32px; height: 96px;"></div>        
+        </div>
+        <div><!-- prawa noga-->
+            <div class="righ-leg-top"></div>
+            <div style="--i:0; width: 32px; height: 96px;"></div>
+            <div style="--i:1; width: 32px; height: 96px;"></div>
+            <div style="--i:2; width: 32px; height: 96px;"></div>
+            <div style="--i:3; width: 32px; height: 96px;"></div>        
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- Wysokość i szerokość:
+    64+96+96= Wysokość(256px)
+    128px= szerokosc
+x y zGłowa 8x8x8 (*8)
+Tułów 8x12x4 64x96x32
+Ręka 4x12x4  32x96x32
+Noga 4x12x4  32x96x32    -->
