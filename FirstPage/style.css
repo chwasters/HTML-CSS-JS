@@ -1,0 +1,120 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+}
+#header {
+    background-image: url('Back.jpg');
+    background-size: cover;
+}
+#header img{
+    display: flex;
+    width:100px;
+    height:100px;
+    margin: auto;
+}
+#header p {
+    font-size: 25px;
+    color: gray;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.img-circle {
+    border: 3px solid white;
+    border-radius: 50%;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 17px;
+    color: #20bcd5;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+h1 span {
+    border: 4px dashed #20bcd5;
+    padding: 10px
+}
+.quote {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    font-size: 11pt;
+}
+
+table, th, td {
+    border: 2px gray solid;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+.selected {
+    background-color: red;
+    font-weight: bold;
+    color: white;
+}
+li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+iframe, audio {
+    display: block;
+    margin: auto;
+    border: 3px solid gray;
+}
+.form-contact {
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.form-contact input{
+    width: 50%;
+    height: 30px;
+    margin: 6px auto;
+    border: 1px gray solid;
+    border-radius: 2%;
+    
+}
+.form-contact textarea {
+    width: 50%;
+    margin: 6px auto;
+    border: 1px gray solid;
+}
+.Send-button {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    margin: 0;
+    font-weight: bold;
+}
+.Send-button:hover {
+    background-color: cornflowerblue;
+    color: white;
+    transition: 0.5s;
+}
