@@ -1,0 +1,100 @@
+.wiki-logo-img {
+    width: 125px;
+    height: 125px;
+    margin: 7px 9px;
+}
+.Left-panel {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    height:1269px;
+    width: 160px;
+    font-size: 0.75em;
+    
+    
+    position: absolute;
+    top:0px;
+    
+    
+}
+.hyper-link {
+    text-decoration: none;
+    margin: 3px 0px 0px 10px;
+    display: inline-block;
+}
+.Left-titles {
+    margin-top: 14px;
+    margin-left: 10px;
+    display: flex;
+}
+.bottom-line-left {
+    margin-top: 1px;
+    width: 130px;
+}
+body {
+    background-color: #f6f6f6;
+    margin: 0;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    
+}
+
+
+.Top-nav {
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+    margin-right: 10px;
+    
+    
+}
+.Top-nav li {
+    margin-left: 10px;
+    left: 160px;
+    margin-top: 7px;
+    
+}
+.section {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    position:absolute;
+    left: 166px;
+    top:0px;
+    right: 0px;
+}
+
+.section1 {
+    margin-left: 176px;
+    padding: 20px 24px 0px 24px;
+}
+h1 {
+    font-weight: unset;
+}
+.Under-title {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #cccccc;
+    padding:8px;
+    padding-top: 0px;
+}
+.Spis-Tresci {
+    display: table;
+    border: 1px solid #cccccc;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    
+}
+.footer {
+    margin-left: 160px;
+    font-size: 0.75em;
+    
+}
+.footer-list1 {
+    list-style: none;
+    line-height: 1.4;
+}
+.footer-list2 {
+    display:flex;
+    list-style: none;
+    padding-right: 230px;
+    justify-content: space-between;
+}

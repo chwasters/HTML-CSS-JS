@@ -1,0 +1,67 @@
+body {
+    background-color: white;
+}
+.navbar-dots {
+    width: 21px;
+    height: 21px;
+    padding: 10px;
+    margin-right: 10px;
+    
+}
+.navbar-dots:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 50%;
+
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar-icons {
+    color:rgba(0,0,0,.87);
+    text-decoration: none;
+    margin: 8px;
+}
+.navbar-icons:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navbar-icons2 {
+    margin:8px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar-img {
+    border-radius: 50%;
+    padding:4px;
+}
+.navbar-img:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+.google-front {
+    display:flex;
+    max-height: 290px;
+    height: calc(100% - 560px);
+    min-height: 92px;
+    align-items: center;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.search-bar {
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
+.search-bar-style {
+    padding: 10px 200px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+.serach-section-button {
+    padding: 5px 16px;
+    margin: 5px;
+    border: none;
+    font-size: 15px;
+}
