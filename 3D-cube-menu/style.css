@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    background-size: 800% 800%;
+    background-color: #252420;
+}
+
+ul {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    right: 0px;
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: skewY(-15deg);
+    
+}
+li {
+    list-style:none;
+    padding: 15px;
+    position: relative;
+    background: #505050;
+    width: 200px;
+    z-index: var(--i);
+    transition: 0.5s;
+}
+
+li a {
+    text-decoration:none;
+    font-size: 20px;
+    color: lightgray;
+    text-transform: uppercase;
+}
+li:hover a{
+    color: white;
+    transition: 0.5s;
+}
+li:hover {
+    background-color: lightblue;
+    transition: 0.5s;
+    transform: translateX(50px);
+    padding: 30px;
+}
+li:active
+{
+    transition: 0.5s;
+    background-color: rgba(173, 216, 230, 0.301);
+}
+
+
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 0px;
+    background-color: #151515;
+    left: -40px;
+    transform-origin: right;
+    transform: skewY(45deg);
+}
+li:hover::after
+{
+    background-color: lightblue;
+}
+li:hover::before{
+    background-color: lightblue;
+}
+ul li::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    background-color: #303030;
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
