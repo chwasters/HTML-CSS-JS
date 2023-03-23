@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    background-color: black;
+}
+.container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 400px;
+    left: 0px;
+    right: 0px;
+}
+.ring {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fefefe;
+    box-shadow: 0px 0px 50px 10px rgb(255, 255, 255);
+    animation: animate1 10s ease infinite;
+    
+}
+.ring::before{
+    content: '';
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 81px 31px rgb(21, 169, 248);
+}
+.ring::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top:-5px;
+    left: -5px;
+    box-shadow: 0 0 120px rgba(23, 117, 240, 0.26),
+    0 0 200px rgba(14, 151, 231, 0.4),
+    0 0 300px rgba(0, 153, 255, 0.6),
+    0 0 400px rgba(0, 110, 255, 0.8);
+}
+.ring:nth-child(1)
+{
+   
+    transform: translateX(-325px);
+    --i:-325;
+    
+}
+.ring:nth-child(2)
+{
+    
+    transform: translateX(-125px);
+    --i:-125;
+}
+.ring:nth-child(3)
+{
+    transform: translateX(75px);
+    --i:75;
+}
+.ring:nth-child(4)
+{
+    transform: translateX(275px);
+    --i:275;
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: translateX(0px);
+        
+        
+    }
+    25%
+    {   
+        transform: translateX(calc(1px*var(--i)));
+
+    }
+    50%
+    {
+        transform: translateX(calc(0.5px*var(--i))) scale(0.5);
+    }
+    75%
+    {
+        transform: translateX(calc(0.5px*var(--i))) scale(0.5);
+    }
+    100%
+    {
+        transform: translateX(0px) scale(1);
+    
+    }
+    
+
+}
+@keyframes lights-on{
+    0%
+    {
+        opacity: 0;
+    }
+    25%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.3;
+    }
+    75%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+
+}
+.lights
+{
+    right: 400px;
+    top: 350px;
+    color: white;
+    width: 258px;
+    height: 100px;
+    position: absolute;
+    animation: lights-on 10s ease infinite;
+    
+    
+}
+.tail {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-right: 5px  white solid;
+    border-bottom: 5px white solid;
+    border-bottom-right-radius: 25px;
+    bottom: 0px;
+    right: 0px;
+
+}
+.half
+{
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    bottom: 24px;
+    left: 0px;
+    border-bottom: 5px white solid;
+    transform: rotateZ(45deg);
+}
+.top
+{
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    border-bottom: 5px white solid;
+    transform: rotate(-7deg);
+    bottom: 55px;
+    left: 11px;
+
+}
+.extras{
+position: absolute;
+width: 20px;
+height: 25px;
+right: -4px;
+bottom: 29px;
+background-color: black;
+transform: rotate(15deg);
+
+}
+
+
+.lights1
+{
+   
+    top: 350px;
+    color: white;
+    width: 258px;
+    height: 100px;
+    position: absolute;
+    left: 400px;
+    transform: rotateY(180deg);
+    animation: lights-on 10s ease infinite;
+
+    
+}
+.tail1 {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-right: 5px  white solid;
+    border-bottom: 5px white solid;
+    border-bottom-right-radius: 25px;
+    bottom: 0px;
+    right: 0px;
+
+}
+.half1
+{
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    bottom: 24px;
+    left: 0px;
+    border-bottom: 5px white solid;
+    transform: rotateZ(45deg);
+}
+.top1
+{
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    border-bottom: 5px white solid;
+    transform: rotate(-7deg);
+    bottom: 55px;
+    left: 11px;
+
+}
+.extras1{
+position: absolute;
+width: 20px;
+height: 25px;
+right: -4px;
+bottom: 29px;
+background-color: black;
+transform: rotate(15deg);
+
+}
+
