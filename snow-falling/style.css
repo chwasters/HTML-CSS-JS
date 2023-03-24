@@ -1,0 +1,78 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+    background: black;
+}
+.snow {
+  width: 10px;
+  height: 10px;
+  background: white;
+  margin-left: 5px;
+  box-shadow: 0 0 10px 5px white;
+  border-radius: 50%;
+  animation: falling 10s linear infinite;
+  animation-duration: calc(120s / var(--i));
+}
+.snow1{
+  width: 15px;
+  height: 15px;
+  background-color: lightblue;
+  box-shadow: 0 0 5px 8px lightblue;
+  border-radius: 50%;
+  animation: falling 10s linear infinite;
+  animation-duration: calc(120s / var(--i)); 
+}
+.snow2 {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 8px white;
+  transform: rotateX(45deg);
+  animation: falling45deg 10s linear infinite;
+  animation-duration: calc(120s / var(--i));
+}
+.snow3 {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px white;
+  transform: rotateX(45deg);
+  animation: falling-45deg 10s linear infinite;
+  animation-duration: calc(120s / var(--i));
+}
+@keyframes falling {
+0%{
+  transform: translateY(-10vh) scale(0);
+}
+100%{
+  transform: translateY(100vh) scale(0.7);
+}
+}
+@keyframes falling45deg {
+  0%
+  {
+    transform: translateX(0vh) translateY(-10vh) scale(0);
+  }
+  100%
+  {
+    transform: translateX(50vh) translateY(100vh) scale(0.7);
+  }
+}
+@keyframes falling-45deg {
+  0%
+  {
+    transform: translateX(100vh) translateY(-10vh) scale(0);
+  }
+  100%
+  {
+    transform: translateX(50vh) translateY(100vh) scale(0.7);
+  }
+}
+.Container {
+  display: flex;
+
+}
