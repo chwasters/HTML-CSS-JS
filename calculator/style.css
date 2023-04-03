@@ -1,0 +1,115 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+body
+{
+    background-color: black;
+}
+.currentNumber
+{
+    font-size: 72px;
+    font-weight: 200;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    color: white;
+    min-height: 40%;
+    position: relative;
+    bottom: -60px;
+}
+.panel button:active
+{
+    background-color: white;
+    transition: 0.2s;
+    color: black;
+}
+.Calculator 
+{
+    height: 60vh;
+    min-width: 310px;
+    max-width: 310px;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    margin: 0 auto;
+    top: 200px;
+    border: yellow 1px solid;
+    border-radius: 25px;
+}
+.panel
+{
+    min-height: 60%;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    right: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.Zero { 
+    grid-area: 5 / 1 / 6 / 3; 
+    height: 70px;
+    width: 140px;
+    border-radius: 50px;
+    background-color: #303030;
+    color: white;
+}
+.panel button
+{
+    
+    font-size: 25px;
+    font-weight: 400;
+    border: none;
+}
+.Number
+{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #303030;
+    color: white;
+    
+}
+.Operator
+{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #f59806;
+    color: white;
+    
+}
+.clear
+{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: lightgray;
+    
+    color: black;
+}
+.plus-minus
+{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: lightgray;
+    
+    color: black;
+}
+.Procent
+{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: lightgray;
+    
+    color: black;
+}
+        
